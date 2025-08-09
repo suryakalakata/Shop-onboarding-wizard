@@ -52,7 +52,7 @@
   color: white;
 }
 
-/* Selected button style */
+
 .apply-btn.selected {
   background: #2a64ff;
   color: white;
@@ -64,7 +64,6 @@
   margin-right: 5px;
 }
 
-/* Icons row in Step 3 */
 
 .icon bar{
   display: flex;
@@ -89,7 +88,37 @@
   color: #007BFF; /* make it blue like in image */
 }
 
-/* Scroll step styling for Step 3 */
+.emoji-btn {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+emoji-picker {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  max-height: 350px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.mic-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.icon-btn {
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}    
+
 .scroll-step {
   max-height: 550px;
   overflow-y: auto;
