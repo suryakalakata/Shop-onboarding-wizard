@@ -6,7 +6,18 @@
   display: block;
 }
 
+.apply-theme-heading {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
 
+.themes-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Theme card styling */
 .theme-card {
   border: 1px solid #ddd;
   padding: 15px;
@@ -52,7 +63,7 @@
   color: white;
 }
 
-
+/* Selected button style */
 .apply-btn.selected {
   background: #2a64ff;
   color: white;
@@ -64,11 +75,22 @@
   margin-right: 5px;
 }
 
+.next-btn {
+  margin-top: 20px;
+  background-color: #2a64ff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-.icon bar{
+
+/* Icons row in Step 3 */
+.icon-row {
   display: flex;
-  gap:25px;
-  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -84,41 +106,7 @@
   transform: scale(1.1);
 }
 
-.icon.smile {
-  color: #007BFF; /* make it blue like in image */
-}
-
-.emoji-btn {
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-emoji-picker {
-  position: absolute;
-  z-index: 100;
-  display: none;
-  max-height: 350px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-.mic-btn {
-  font-size: 24px;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.icon-btn {
-  font-size: 24px;
-  cursor: pointer;
-  border: none;
-  background: none;
-}    
-
+/* Scroll step styling for Step 3 */
 .scroll-step {
   max-height: 550px;
   overflow-y: auto;
