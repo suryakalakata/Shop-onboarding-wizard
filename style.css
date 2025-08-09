@@ -1,0 +1,118 @@
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.apply-theme-heading {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.themes-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Theme card styling */
+.theme-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  flex: 1;
+}
+
+.theme-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.theme-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.theme-title small {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.apply-btn {
+  background: transparent;
+  border: 1.5px solid #2a64ff;
+  color: #2a64ff;
+  padding: 6px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.apply-btn:hover {
+  background: #2a64ff;
+  color: white;
+}
+
+/* Selected button style */
+.apply-btn.selected {
+  background: #2a64ff;
+  color: white;
+  border-color: #2a64ff;
+}
+
+.apply-btn.selected::before {
+  content: '✔';
+  margin-right: 5px;
+}
+
+.next-btn {
+  margin-top: 20px;
+  background-color: #2a64ff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* Icons row in Step 3 */
+.icon-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll step styling for Step 3 */
+.scroll-step {
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+
+
+
