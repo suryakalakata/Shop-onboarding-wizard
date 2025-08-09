@@ -1,9 +1,4 @@
 // Select all apply buttons
-document.querySelectorAll('.icon').forEach(icon => {
-  icon.addEventListener('click', () => {
-    alert(You clicked on: ${icon.title});
-  });
-});
 
 const buttons = document.querySelectorAll('.apply-btn');
 
