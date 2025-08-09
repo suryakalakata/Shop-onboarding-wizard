@@ -70,11 +70,6 @@ micBtn.addEventListener('click', () => {
   }
 });
 
-
-
-
-
-
 // Function to switch between steps
 function goToStep(stepNum) {
   // Hide all steps
