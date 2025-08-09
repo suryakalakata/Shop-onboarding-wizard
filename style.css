@@ -6,18 +6,7 @@
   display: block;
 }
 
-.apply-theme-heading {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 1.8rem;
-}
 
-.themes-container {
-  display: flex;
-  gap: 30px;
-}
-
-/* Theme card styling */
 .theme-card {
   border: 1px solid #ddd;
   padding: 15px;
@@ -75,24 +64,7 @@
   margin-right: 5px;
 }
 
-.next-btn {
-  margin-top: 20px;
-  background-color: #2a64ff;
-  color: white;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-
 /* Icons row in Step 3 */
-.icon-row {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
 
 .icon bar{
   display: flex;
@@ -116,14 +88,6 @@
 .icon.smile {
   color: #007BFF; /* make it blue like in image */
 }
-
-.label {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-    
 
 /* Scroll step styling for Step 3 */
 .scroll-step {
