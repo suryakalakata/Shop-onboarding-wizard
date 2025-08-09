@@ -46,29 +46,30 @@ document.getElementById("cameraBtn").addEventListener("click", () => {
 
 //Mic click
 const micBtn = document.getElementById('micBtn');
-const output = document.getElementById('output');
-let recognition;
-if ('webkitSpeechRecognition' in window) {
-  recognition = new webkitSpeechRecognition();
-  recognition.continuous = false;
-  recognition.interimResults = false;
-  recognition.lang = 'en-US';
-  recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    output.value += (output.value ? ' ' : '') + transcript;
-  };
-  recognition.onerror = (event) => {
-    console.error('Speech recognition error:', event.error);};
-  };
-}
-else {
-  alert("Speech Recognition not supported. Try using Google Chrome.");
-}
-micBtn.addEventListener('click', () => {
-  if (recognition) {
-    recognition.start();
-  }
-});
+    const output = document.getElementById('output');
+    let recognition;
+
+    if ('webkitSpeechRecognition' in window) {
+      recognition = new webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = 'en-US';
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        output.value += (output.value ? ' ' : '') + transcript;
+      };
+
+      recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+      };
+    } else {
+      alert("Speech Recognition not supported. Try using Google Chrome.");
+    }
+
+    micBtn.addEventListener('click', () => {
+      if (recognition) recognition.start();
+    });
 
 // Function to switch between steps
 function goToStep(stepNum) {
